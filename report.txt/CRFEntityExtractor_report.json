@@ -1,0 +1,50 @@
+{
+    "date": {
+        "precision": 1.0,
+        "recall": 0.08695652173913043,
+        "f1-score": 0.16,
+        "support": 23
+    },
+    "keyword": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 36
+    },
+    "no_entity": {
+        "precision": 0.8973717146433041,
+        "recall": 1.0,
+        "f1-score": 0.945910290237467,
+        "support": 717
+    },
+    "person": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2
+    },
+    "place": {
+        "precision": 1.0,
+        "recall": 0.3235294117647059,
+        "f1-score": 0.48888888888888893,
+        "support": 34
+    },
+    "micro avg": {
+        "precision": 0.8990147783251231,
+        "recall": 0.8990147783251231,
+        "f1-score": 0.8990147783251231,
+        "support": 812
+    },
+    "macro avg": {
+        "precision": 0.5794743429286608,
+        "recall": 0.2820971867007672,
+        "f1-score": 0.31895983582527115,
+        "support": 812
+    },
+    "weighted avg": {
+        "precision": 0.8625806889153314,
+        "recall": 0.8990147783251231,
+        "f1-score": 0.8602461826631601,
+        "support": 812
+    }
+}

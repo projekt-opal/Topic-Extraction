@@ -1,0 +1,32 @@
+pipeline:
+- name: "SpacyNLP"
+  model: "en_core_web_sm"
+- name: "tokenizer_spacy"
+- name: "CRFEntityExtractor"
+  # The features are a ``[before, word, after]`` array with
+  # before, word, after holding keys about which
+  # features to use for each word, for example, ``"title"``
+  # in array before will have the feature
+  # "is the preceding word in title case?".
+  # Available features are:
+  # ``low``, ``title``, ``suffix5``, ``suffix3``, ``suffix2``,
+  # ``suffix1``, ``pos``, ``pos2``, ``prefix5``, ``prefix2``,
+  # ``bias``, ``upper`` and ``digit``
+  features: [["low", "title"], ["bias", "suffix3"], ["upper", "pos", "pos2"]]
+
+  # The flag determines whether to use BILOU tagging or not. BILOU
+  # tagging is more rigorous however
+  # requires more examples per entity. Rule of thumb: use only
+  # if more than 100 examples per entity.
+  BILOU_flag: true
+
+  # This is the value given to sklearn_crfcuite.CRF tagger before training.
+  max_iterations: 50
+
+  # This is the value given to sklearn_crfcuite.CRF tagger before training.
+  # Specifies the L1 regularization coefficient.
+  L1_c: 0.1
+
+  # This is the value given to sklearn_crfcuite.CRF tagger before training.
+  # Specifies the L2 regularization coefficient.
+  L2_c: 0.1

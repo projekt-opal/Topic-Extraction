@@ -1,0 +1,9 @@
+[rasa]
+rasa_model_directory = model/
+rasa_model = opal-model/default/model_20191016-161740/
+[flask]
+host=127.0.0.1
+
+[agdistis]
+agdistis_url = http://localhost:8080/AGDISTIS
+
