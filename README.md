@@ -2,7 +2,7 @@
 OPAL component to extract entities such as places, keywords from dataset descriptions to improve relevant dataset seraching. This repository contains all data and utilities to train and test a topic extraction model.
 
 ## Requirements
-Python version 3.x, rasa_nlu
+python version 3.x, rasa_nlu
 
 ## Usage Instructions
 
